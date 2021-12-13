@@ -1,8 +1,8 @@
 # perfserver
-This is a simple JSON Server, that delivers pseudo performance data. It is used to help testing programming capabilities
+This is a simple JSON Server that delivers pseudo performance data. It is used to help testing programming capabilities
 
 
-1) Requirements for the program that should be developed
+**1) Requirements for the program that should be developed**
 
 The programm shall retrieve for a given 5 minute slice the performance data from the server.
 The unix timestamp shall be the timestamp at the beginning of the time interval.
@@ -22,7 +22,7 @@ The output shall be one or more valid JSON files with the following format. (Eac
 Hint: One of easiest JSON formating libraries is Google GSON:  https://github.com/google/gson
 
 
-2) The Simulator
+**2) The Simulator**
 The first thing is a simulator, that simulates providing performance data.
 
 It can be started with java -jar perfserver-[....].jar. The source code is in this github repository.
