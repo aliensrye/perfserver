@@ -2,7 +2,7 @@
 This is a simple JSON Server that delivers pseudo performance data. It is used to help testing programming capabilities
 
 
-**1) Requirements for the program that should be developed**
+**1) Requirements for the program that should be developed using JAVA**
 
 The program shall retrieve for a given 5 minute slice the performance data from the server.
 The unix timestamp shall be the timestamp at the beginning of the time interval.
