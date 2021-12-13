@@ -4,7 +4,7 @@ This is a simple JSON Server, that delivers pseudo performance data. It used to 
 1) The Simulator
 The first thing is a simulator, that simulate providing Performance data.
 
-It can be startet with java -jar perfserver.jar or is found as the responsible maven project.
+It can be startet with java -jar perfserver-[....].jar or is found as the responsible maven project.
 This launches a webserver with the folliwng functions on http://127.0.0.1:8001
 
 /hello  -> This answers with Hello World
@@ -34,4 +34,6 @@ The output shall be one or more valid JSON files with the following format
 - each line is a valid JSON format
 - {starttime:"|ISO 8601 Format|",duration:|duration in minutes|,key:{key:"|Value of Key|"},value:{|Name-Val1|:|val1|,|Name-Val2|:|val2|,...}}
 
+
+Hint: One of easiest JSON formating libraries is Google GSON:  https://github.com/google/gson
 
