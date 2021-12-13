@@ -4,11 +4,11 @@ This is a simple JSON Server that delivers pseudo performance data. It is used t
 
 **1) Requirements for the program that should be developed**
 
-The programm shall retrieve for a given 5 minute slice the performance data from the server.
+The program shall retrieve for a given 5 minute slice the performance data from the server.
 The unix timestamp shall be the timestamp at the beginning of the time interval.
 If the start time of the program is smaller than current time - 5 minutes another time slice shall be retrieved.
 After successfully retrieving a time slice the start date of the time slice shall be written to a file on the disk.
-If no more time slices can be retrieved the programm shall terminate.
+If no more time slices can be retrieved the program shall terminate.
 
 If the program is started again the file shall be read and retrieving of data shall start with the next time slice.
 The date/time in the file shall be in a human understandable format.
