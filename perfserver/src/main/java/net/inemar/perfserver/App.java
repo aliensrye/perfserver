@@ -71,15 +71,15 @@ final class GetDataHandler implements HttpHandler {
               if (query.startsWith("time=")) {
                   long time=Long.parseLong(query.substring(5).toString());
                   if (time % (5*60) != 0 ) {
-                    Resp.sendError(httpExchange, 400, "LOL time is not at 5 minutes interval  time= "+time);
+                    Resp.sendError(httpExchange, 400, "time is not at 5 minutes interval  time= "+time);
                   };
                   time=time*1000;
                   if (time > System.currentTimeMillis()-(5*60*1000) ) {
-                    Resp.sendError(httpExchange, 400, "LOL time is in the future   time= "+time);
+                    Resp.sendError(httpExchange, 400, "time is in the future   time= "+time);
                   };
 
                   if (time < System.currentTimeMillis()-(3*24*60*60*1000) ) {
-                    Resp.sendError(httpExchange, 400, "LOL time is too much in the past more than 3 days  time= "+time);
+                    Resp.sendError(httpExchange, 400, "time is too much in the past more than 3 days  time= "+time);
                   };
 
 
